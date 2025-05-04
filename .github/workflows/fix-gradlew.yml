@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x prismfit/prismfit/gradlew
-      - run: git add gradlew
+      - run: git add prismfit/prismfit/gradlew
       - run: git commit -m "Fix gradlew permissions"
       - run: git push origin main
