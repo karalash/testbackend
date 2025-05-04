@@ -6,6 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: chmod +x prismfit/prismfit/gradlew
+      - run: git config --global user.email "veronika.karalash-pi2103@kep.nung.edu.ua"
+      - run: git config --global user.name "karalash"
       - run: git add prismfit/prismfit/gradlew
       - run: git commit -m "Fix gradlew permissions"
       - run: git push origin main
