@@ -10,4 +10,5 @@ jobs:
       - run: git config --global user.name "karalash"
       - run: git add prismfit/prismfit/gradlew
       - run: git commit -m "Fix gradlew permissions"
+      - run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/karalash/testbackend.git
       - run: git push origin main
